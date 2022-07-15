@@ -1,0 +1,29 @@
+[
+  {
+    "icon": "../images/skills/python.png",
+    "name": "Programming languages",
+    "tech": [
+      { "name": "Java", "stars": 3 },
+      { "name": "Python", "stars": 3 },
+      { "name": "JavaScript", "stars": 3 }
+    ]
+  },
+  {
+    "icon": "../images/skills/react.png",
+    "name": "Frontend Javascript Frameworks",
+    "tech": [{ "name": "React", "stars": 3 }]
+  },
+  {
+    "icon": "../images/skills/staruml.png",
+    "name": "System modeling",
+    "tech": [
+      { "name": "StarUML", "stars": 4 },
+      { "name": "GAMS", "stars": 2 }
+    ]
+  },
+  {
+    "icon": "../images/skills/database.png",
+    "name": "Database",
+    "tech": [{ "name": "SQL", "stars": 4 }]
+  }
+]
