@@ -10,7 +10,7 @@ const social = [
   {
     title: "Instagram",
     icon: FaInstagram,
-    link: "https://instagram.com/gledrian.dev",
+    link: "https://instagram.com/gledtmp",
     class: "bg-instagram",
   },
   {

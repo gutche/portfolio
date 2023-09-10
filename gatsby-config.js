@@ -4,7 +4,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-postcss`,
     `gatsby-plugin-image`,
-    `gatsby-plugin-sharp`,
+    "gatsby-plugin-sharp",
     `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-transformer-remark`,
@@ -42,5 +42,6 @@ module.exports = {
       "Home page of Gledrian Gutierrez! A software developer currently living in Madrid, Spain.",
     author: "Gledrian Gutierrez",
     siteUrl: "https://gledrian.dev",
+    icon: "./src/images/icon.png"
   },
 }

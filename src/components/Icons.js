@@ -16,6 +16,7 @@ import {
   FaSignLanguage,
   FaStar,
   FaHome,
+  FaAngleDoubleUp
 } from "react-icons/fa"
 import { GoTools } from "react-icons/go"
 import {
@@ -24,6 +25,7 @@ import {
   IoIosMoon,
   IoIosPaperPlane,
   IoIosSunny,
+  IoIosRocket
 } from "react-icons/io"
 import {
   MdLocationOn,
@@ -59,6 +61,7 @@ export {
   IoIosMoon,
   IoIosPaperPlane,
   IoIosSunny,
+  IoIosRocket,
   MdLocationOn,
   MdMenu,
   MdMoreHoriz,
@@ -67,4 +70,5 @@ export {
   MdWork,
   MdMusicNote,
   FaHome,
+  FaAngleDoubleUp,
 }

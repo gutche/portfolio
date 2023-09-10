@@ -1,30 +1,16 @@
 [
   {
-    "image": "../images/projects/myth-arena.png",
-    "title": "Myth-Arena",
-    "description": "A Battle Simulation game with mythical characters. Made with design patterns (University group project)",
-    "tags": ["java", "design patterns"],
-    "website": "https://github.com/gutche/myth-arena"
-  },
-  {
-    "image": "../images/projects/cinema.jpg",
-    "title": "Cinema-Ticket-Dispenser",
-    "description": "Cinema ticket dispenser. (University Object-oriented programming project)",
-    "tags": ["java", "Object-oriented programming"],
-    "website": "https://github.com/gutche/cinema-ticket-dispenser"
-  },
-  {
-    "image": "../images/projects/portfolio.PNG",
+    "image": "../images/projects/portfolio.png",
     "title": "Portfolio website",
-    "description": "Gledrian's home on the Web. A place to showcase (flex) my skills",
+    "description": "Gledrian's home on the Web",
     "tags": ["gatsbyJS", "tailwind"],
     "website": "https://github.com/gutche/portfolio"
   },
   {
-    "image": "../images/projects/e-commerce.png",
-    "title": "E-commerce website",
-    "description": "E-commerce website as personal project.",
-    "tags": ["React", "API", "JSX"],
-    "website": "https://github.com/gutche/e-commerce"
+    "image": "../images/projects/alist.png",
+    "title": "Tier-list maker",
+    "description": "Tier-list generator",
+    "tags": ["Angular", "API", "TS","docker","spring-boot"],
+    "website": "https://github.com/CodeURJC-DAW-2022-23/webapp1"
   }
 ]
