@@ -31,6 +31,9 @@ const Navigation = () => {
         <IoIosRocket size={25} />
       </div>
       <div
+        tabIndex={0}
+        role="button"
+        onKeyDown={toggleDark}
         className="flex-center cursor-pointer hover:text-primary"
         onClick={toggleDark}
       >

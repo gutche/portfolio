@@ -14,8 +14,7 @@
     "icon": "../images/skills/react.png",
     "name": "Web Development Frameworks",
     "tech": [{ "name": "React", "stars": 3 },
-    { "name": "Angular", "stars": 3 }
-  ]
+    { "name": "Angular", "stars": 3 }]
   },
   {
     "icon": "../images/skills/docker.png",
