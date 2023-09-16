@@ -18,13 +18,13 @@
     "title": "Ticket dispenser. Cinema Ticket Dispenser",
     "description": "Object-oriented programming class project at URJC",
     "tags": ["Java","OOP"],
-    "website": "https://github.com/CodeURJC-DAW-2022-23/webapp1"
+    "website": "https://github.com/gutche/cinema-ticket-dispenser"
   },
   {
     "image": "../images/projects/myth-arena.png",
     "title": "Myth Arena",
     "description": "Battle simulation. Programming methodolgies class project at URJC",
     "tags": ["Java","Design patterns","OOP"],
-    "website": "https://github.com/CodeURJC-DAW-2022-23/webapp1"
+    "website": "https://github.com/gutche/myth-arena"
   }
 ]
