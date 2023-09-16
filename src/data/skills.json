@@ -28,5 +28,13 @@
     "icon": "../images/skills/database.png",
     "name": "Database",
     "tech": [{ "name": "SQL", "stars": 4 }]
+  },
+  {
+    "icon": "../images/skills/nodejs.png",
+    "name": "Backend Technology",
+    "tech": [{ "name": "Spring Boot", "stars": 4 },
+      { "name": "Express.js", "stars": 4 },
+      { "name": "Node.js", "stars": 4 }
+    ]
   }
 ]

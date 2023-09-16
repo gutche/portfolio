@@ -1,16 +1,30 @@
 [
   {
     "image": "../images/projects/portfolio.png",
-    "title": "Portfolio website",
+    "title": "Portfolio Website",
     "description": "Gledrian's home on the Web",
     "tags": ["gatsbyJS", "tailwind"],
     "website": "https://github.com/gutche/portfolio"
   },
   {
     "image": "../images/projects/alist.png",
-    "title": "Tier-list maker",
-    "description": "Tier-list generator",
-    "tags": ["Angular", "API", "TS","docker","spring-boot"],
+    "title": "Tier-List Maker",
+    "description": "Tier-list generator and social networking website",
+    "tags": ["Angular", "REST", "TypeScript","Docker","spring-boot","java"],
+    "website": "https://github.com/CodeURJC-DAW-2022-23/webapp1"
+  },
+  {
+    "image": "../images/projects/cinema.jpg",
+    "title": "Ticket dispenser. Cinema Ticket Dispenser",
+    "description": "Object-oriented programming class project at URJC",
+    "tags": ["Java","OOP"],
+    "website": "https://github.com/CodeURJC-DAW-2022-23/webapp1"
+  },
+  {
+    "image": "../images/projects/myth-arena.png",
+    "title": "Myth Arena",
+    "description": "Battle simulation. Programming methodolgies class project at URJC",
+    "tags": ["Java","Design patterns","OOP"],
     "website": "https://github.com/CodeURJC-DAW-2022-23/webapp1"
   }
 ]
