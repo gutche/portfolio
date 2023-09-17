@@ -2,28 +2,28 @@
   {
     "image": "../images/projects/portfolio.png",
     "title": "Portfolio Website",
-    "description": "Gledrian's home on the Web",
+    "description": "My portfolio website built from scratch using GatsbyJS and TailwindCSS for styling",
     "tags": ["gatsbyJS", "tailwind"],
     "website": "https://github.com/gutche/portfolio"
   },
   {
     "image": "../images/projects/alist.png",
     "title": "Tier-List Maker",
-    "description": "Tier-list generator and social networking website",
+    "description": "Tier-list generator and social networking website. It exhibits my full-stack experience building web applications",
     "tags": ["Angular", "REST", "TypeScript","Docker","spring-boot","java"],
     "website": "https://github.com/CodeURJC-DAW-2022-23/webapp1"
   },
   {
     "image": "../images/projects/cinema.jpg",
-    "title": "Ticket dispenser. Cinema Ticket Dispenser",
-    "description": "Object-oriented programming class project at URJC",
+    "title": "Cinema Ticket Dispenser",
+    "description": "Ticket dispenser. It's a project at my university that I included to demonstrate that I know the concepts of Object-oriented programming",
     "tags": ["Java","OOP"],
     "website": "https://github.com/gutche/cinema-ticket-dispenser"
   },
   {
     "image": "../images/projects/myth-arena.png",
     "title": "Myth Arena",
-    "description": "Battle simulation. Programming methodolgies class project at URJC",
+    "description": "Battle simulationm game. University project demonstrating my knowledge of design patterns",
     "tags": ["Java","Design patterns","OOP"],
     "website": "https://github.com/gutche/myth-arena"
   }

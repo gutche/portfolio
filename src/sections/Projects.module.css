@@ -24,14 +24,28 @@
 
 @screen md {
   .project {
-    min-width: 380px;
-    max-width: 380px;
+    min-width: 310px;
+    max-width: 310px;
   }
 }
 
 @screen lg {
   .project {
-    min-width: 360px;
-    max-width: 360px;
+    min-width: 400px;
+    max-width: 400px;
+  }
+}
+
+@screen xl {
+  .project {
+    min-width: 380px;
+    max-width: 380px;
+  }
+}
+
+@screen 2xl {
+  .project {
+    min-width: 340px;
+    max-width: 340px;
   }
 }
