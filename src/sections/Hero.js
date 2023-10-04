@@ -1,21 +1,19 @@
 import { graphql, useStaticQuery } from "gatsby"
-import GatsbyImage from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import React from "react"
 import Subtitle from "../components/Subtitle"
 import * as styles from "./Hero.module.css"
 
 const Hero = () => {
-  const data = useStaticQuery(graphql`
-    {
-      photo: file(relativePath: { eq: "photo.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 512, quality: 100) {
-            ...GatsbyImageSharpFluid
-          }
-        }
+
+  const data = useStaticQuery(graphql`{
+    file(relativePath: {eq: "photo.png"}) {
+      childImageSharp {
+        gatsbyImageData(placeholder: BLURRED)
       }
+      name
     }
-  `)
+  }`)
 
   return (
     <section id="hero" className="min-h-screen flex items-center container">
@@ -27,7 +25,7 @@ const Hero = () => {
             data-sal="slide-down"
             data-sal-duration="1000"
           >
-            <GatsbyImage {...data.photo.childImageSharp} />
+            <GatsbyImage image={data.file.childImageSharp.gatsbyImageData} alt={data.file.name} />
           </div>
         </div>
         <div className="col-span-3">

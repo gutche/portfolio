@@ -2,7 +2,6 @@ const path = require(`path`)
 module.exports = {
   /* Your site config here */
   plugins: [
-    `gatsby-plugin-postcss`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
@@ -34,7 +33,12 @@ module.exports = {
         path: path.join(__dirname, `src`, `images`),
       },
     },
-    `gatsby-plugin-scroll-reveal`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        icon: 'src/images/icon.png'
+      },
+    },
   ],
   siteMetadata: {
     title: "Gledrian Gutierrez",
@@ -44,4 +48,5 @@ module.exports = {
     siteUrl: "https://gledrian.dev",
     icon: "./src/images/icon.png"
   },
+  
 }

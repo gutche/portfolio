@@ -1,5 +1,5 @@
 import { graphql, useStaticQuery } from "gatsby"
-import GatsbyImage from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
 import React from "react"
 import Heading from "../components/Heading"
@@ -8,28 +8,24 @@ import { FaDev, FaGithub, FaLink } from "../components/Icons"
 import * as styles from "./Projects.module.css"
 
 const Projects = () => {
-  const data = useStaticQuery(graphql`
-    {
-      allProjectsJson {
-        edges {
-          node {
-            id
-            title
-            description
-            tags
-            website
-            image {
-              childImageSharp {
-                fluid(maxWidth: 400, quality: 100) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
+
+  const data = useStaticQuery(graphql`{
+    allProjectsJson {
+      edges {
+        node {
+          title
+          website
+          description
+          image {
+            childImageSharp {
+              gatsbyImageData(placeholder: BLURRED)
             }
           }
         }
       }
     }
-  `)
+  }`)
+
 
   return (
     <section id="projects">
@@ -51,10 +47,10 @@ const Projects = () => {
               className="w-full h-48 bg-black relative flex-center cursor-pointer rounded-lg shadow-lg"
             >
               <FaLink className="absolute" color="#FFF" size="5rem" />
-              <GatsbyImage
+              {<GatsbyImage
                 className="absolute w-full h-full object-cover rounded-lg hover:opacity-50 duration-200"
-                {...node.image.childImageSharp}
-              />
+                image={node.image.childImageSharp.gatsbyImageData}
+              />}
               <span className="sr-only">{node.title}</span>
             </OutboundLink>
             <h5 className="mt-4 font-semibold text-center">{node.title}</h5>

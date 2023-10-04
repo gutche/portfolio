@@ -6,8 +6,8 @@ import Hero from "../sections/Hero"
 import Projects from "../sections/Projects"
 import Skills from "../sections/Skills"
 import * as styles from "./index.module.css"
-import { ThemeProvider } from "@material-ui/styles"
-import { createTheme } from "@material-ui/core"
+import { ThemeProvider } from "@mui/material"
+import { createTheme } from "@mui/material"
 
 const IndexPage = () => {
   const theme = createTheme({})

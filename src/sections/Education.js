@@ -1,6 +1,6 @@
-import Tooltip from "@material-ui/core/Tooltip"
+import Tooltip from '@mui/material/Tooltip'
 import { graphql, useStaticQuery } from "gatsby"
-import GatsbyImage from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import React, { useContext } from "react"
 import Heading from "../components/Heading"
 import { MdSchool } from "../components/Icons"
@@ -8,27 +8,24 @@ import ThemeContext from "../context/ThemeContext"
 
 const Education = () => {
   const { dark } = useContext(ThemeContext)
-  const data = useStaticQuery(graphql`
-    {
-      allEducationJson {
-        edges {
-          node {
-            id
-            title
-            subtitle
-            period
-            icon {
-              childImageSharp {
-                fixed(width: 32, height: 32) {
-                  ...GatsbyImageSharpFixed
-                }
-              }
+
+  const data = useStaticQuery(graphql`{
+    allEducationJson {
+      edges {
+        node {
+          id
+          subtitle
+          title
+          period
+          icon {
+            childImageSharp {
+              gatsbyImageData(placeholder: BLURRED)
             }
           }
         }
       }
     }
-  `)
+  }`)
 
   return (
     <section id="education">
@@ -54,10 +51,11 @@ const Education = () => {
                   />
                 </Tooltip>
                 <div className="ml-8">
-                  <GatsbyImage
+                  {<GatsbyImage
                     className="w-8 h-8"
-                    {...node.icon.childImageSharp}
-                  />
+                    image={node.icon.childImageSharp.gatsbyImageData}
+                    alt={node.title}
+                  />}
                   <h6 className="mt-3 font-semibold">{node.title}</h6>
                   <h6 className="text-sm">{node.subtitle}</h6>
                   <h6 className="mt-2 text-xs">({node.period})</h6>
