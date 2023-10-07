@@ -21,9 +21,6 @@ const Hero = () => {
         <div className="col-span-2">
           <div
             className="max-w-lg mx-auto"
-            data-depth="0.4"
-            data-sal="slide-down"
-            data-sal-duration="1000"
           >
             <GatsbyImage image={data.file.childImageSharp.gatsbyImageData} alt={data.file.name} />
           </div>
@@ -36,9 +33,6 @@ const Hero = () => {
 
           <div
             className="text-center lg:text-left flex flex-col items-center lg:ml-4 lg:items-start"
-            data-sal="slide-down"
-            data-sal-delay="500"
-            data-sal-duration="1000"
           >
             <h1 className={`${styles.header} leading-tight`}>
               <span>Hi, I'm Gledrian</span>

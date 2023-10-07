@@ -1,14 +1,7 @@
 import React from "react"
-import Typist from "react-typist"
+import * as styles from "./Subtitle.module.css"
 
-const Subtitle = ({ onDone }) => (
-  <Typist
-    startDelay={500}
-    avgTypingDelay={30}
-    cursor={{ show: false }}
-    className="my-2 flex lg:h-32"
-    onTypingDone={onDone}
-  >
+const Subtitle = () => (
     <code className="w-full text-sm leading-loose">
       <div>
         <span className="text-blue-600">traits</span>
@@ -16,17 +9,10 @@ const Subtitle = ({ onDone }) => (
         <span className="text-blue-600">=</span> {"{"}
       </div>
       <div className="lg:pl-8">
-        <span className="text-red-500">Software Engineer</span>,{" "}
-        <span className="text-red-500">Techie</span>,{" "}
-        <span className="text-red-500">Sports Aficionado</span>,{" "}
-        <span className="text-red-500">Anime fan</span>,{" "}
-      </div>
-      <div className="lg:pl-8">
-        <span className="text-red-500">...</span>{" "}
+        <div className={`${styles.typewriter} text-red-500 w-auto`}>Software Engineer, Techie, Sports Aficionado, Anime fan...</div>{" "}
       </div>
       <div>{"}"};</div>
     </code>
-  </Typist>
 )
 
 export default Subtitle
