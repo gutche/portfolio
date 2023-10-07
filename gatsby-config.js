@@ -36,7 +36,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        icon: 'src/images/icon.png'
+        icon: 'src/images/favicon.png'
       },
     },
   ],
@@ -46,7 +46,5 @@ module.exports = {
       "Home page of Gledrian Gutierrez! A software developer currently living in Madrid, Spain.",
     author: "Gledrian Gutierrez",
     siteUrl: "https://gledrian.dev",
-    icon: "./src/images/favicon.png"
-  },
-  
+  }
 }
