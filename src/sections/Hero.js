@@ -7,7 +7,7 @@ import * as styles from "./Hero.module.css"
 const Hero = () => {
 
   const data = useStaticQuery(graphql`{
-    file(relativePath: {eq: "photo.png"}) {
+    file(relativePath: {eq: "headshot.png"}) {
       childImageSharp {
         gatsbyImageData(placeholder: BLURRED)
       }
