@@ -8,22 +8,30 @@ import Skills from "../sections/Skills"
 import * as styles from "./index.module.css"
 import { ThemeProvider } from "@mui/material"
 import { createTheme } from "@mui/material"
+import Seo from "../components/Seo"
 
 const IndexPage = () => {
   const theme = createTheme({})
 
   return (
-    <ThemeProvider theme={theme}>
-      <Wrapper>
-        <div className={`container ${styles.layout}`}>
-          <Hero />
-          <Projects />
-          <Skills />
-          <Education />
-          <Footer />
-        </div>
-      </Wrapper>
-    </ThemeProvider>
+    <>
+    <head>
+      <Seo/>
+    </head>
+    <body>
+      <ThemeProvider theme={theme}>
+        <Wrapper>
+          <div className={`container ${styles.layout}`}>
+            <Hero />
+            <Projects />
+            <Skills />
+            <Education />
+            <Footer />
+          </div>
+        </Wrapper>
+      </ThemeProvider>
+    </body>
+    </>
   )
 }
 

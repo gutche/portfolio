@@ -8,7 +8,7 @@ const Social = () => {
     <div className={styles.container}>
       {social.map(x => {
         const Icon = x.icon
-
+        
         return (
           <OutboundLink
             href={x.link}

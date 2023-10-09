@@ -3,21 +3,21 @@ import * as styles from "./Button.module.css"
 import ThemeContext from "../context/ThemeContext"
 
 const Button = ({ type, className, icon, title, onClick, disabled }) => {
-  const { dark } = useContext(ThemeContext)
+  
   const Icon = icon
+  const { dark } = useContext(ThemeContext)
 
   return (
     <button
       type={type}
       onClick={onClick}
       disabled={disabled}
-      className={`${styles.container} ${className} ${!dark && styles.light}`}
+      className={`${styles.container} ${className}`}
     >
-      <div>
+      <div className={dark? styles.dark : styles.light}>
         <Icon />
         <h6>{title}</h6>
       </div>
-      <div />
     </button>
   )
 }

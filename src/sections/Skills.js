@@ -30,13 +30,9 @@ const Skills = () => {
       <Heading icon={GoTools} title="Skills" />
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-        {data.allSkillsJson.edges.map(({ node }, index) => (
+        {data.allSkillsJson.edges.map(({ node }) => (
           <div
-            data-sal="zoom-in"
-            key={node.id}
             className={`skill ${styles.skill} group-hover:border-primary`}
-            data-sal-duration="500"
-            data-sal-delay={index * 300 + 300}
           >
             <div className="flex auto items-center">
               {<GatsbyImage

@@ -12,8 +12,10 @@ const SEO = () => {
           author
         }
       }
-      file(relativePath: { eq: "photo.png" }) {
-        publicURL
+      file(relativePath: {eq: "headshot.png"}) {
+        childImageSharp {
+          gatsbyImageData(placeholder: BLURRED)
+        }
       }
     }
   `)
@@ -21,7 +23,7 @@ const SEO = () => {
   const title = site.siteMetadata.title
   const description = site.siteMetadata.description
   const author = site.siteMetadata.author
-  const image = file.publicURL
+  const image = file.childImageSharp.gatsbyImageData
 
   return (
     <Helmet
@@ -46,7 +48,7 @@ const SEO = () => {
           content: `website`,
         },
         {
-          property: "og:image",
+          property: `og:image`,
           content: image,
         },
         {

@@ -2,30 +2,31 @@
   @apply relative inline-flex cursor-pointer;
 }
 
-.container:focus {
-  @apply outline-none;
-}
-
-.container > div:first-child {
-  color: #ffffffbb;
-  @apply relative flex items-center font-semibold px-8 py-2 z-20 bg-primary;
-  /* @apply transition-default; */
+.container > div {
+  @apply relative flex items-center font-semibold px-8 py-2 z-20;
   top: 0;
   left: 0;
   border-radius: 5px;
 }
 
-.container > div:first-child:hover {
+.dark {
+  color: #16191a;
+  background-color: #dddddd;
+}
+
+.light {
+  color: #ffffff;
+  background-color: #222222;
+}
+
+.container > div:hover {
   @apply bg-primary;
 }
 
-.container.light > div:first-child {
-  color: #ffffffee;
-}
-
-.container > div:first-child svg {
+.container > div > svg {
   @apply mr-3;
 }
+
 
 /* .container:hover > div:first-child {
     @apply transition-default;

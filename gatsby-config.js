@@ -43,7 +43,7 @@ module.exports = {
   siteMetadata: {
     title: "Gledrian Gutierrez",
     description:
-      "Home page of Gledrian Gutierrez! A software developer currently living in Madrid, Spain.",
+      "Home page of Gledrian Gutierrez! A software developer based in Madrid, Spain.",
     author: "Gledrian Gutierrez",
     siteUrl: "https://gledrian.dev",
   }

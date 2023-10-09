@@ -18,8 +18,6 @@ const Navigation = () => {
   return (
     <div
       className={`${styles.container}`}
-      data-sal="slide-right"
-      data-sal-duration="1000"
     >
       <div
         tabIndex={0}

@@ -32,12 +32,8 @@ const Projects = () => {
       <Heading icon={FaDev} title="Projects" />
 
       <div className={styles.container}>
-        {data.allProjectsJson.edges.map(({ node }, index) => (
+        {data.allProjectsJson.edges.map(({ node }) => (
           <div
-            key={node.id}
-            data-sal="zoom-in"
-            data-sal-duration="500"
-            data-sal-delay={index * 300 + 300}
             className={`${styles.project}`}
           >
             <OutboundLink
