@@ -16,14 +16,14 @@
   {
     "image": "../images/projects/cinema.jpg",
     "title": "Cinema Ticket Dispenser",
-    "description": "Ticket dispenser. It's a project at my university that I included to demonstrate that I know the concepts of Object-oriented programming",
+    "description": "Ticket dispenser. Object-oriented programming example",
     "tags": ["Java","OOP"],
     "website": "https://github.com/gutche/cinema-ticket-dispenser"
   },
   {
     "image": "../images/projects/myth-arena.png",
     "title": "Myth Arena",
-    "description": "Battle simulationm game. University project demonstrating my knowledge of design patterns",
+    "description": "Battle simulationm game. Design patterns example",
     "tags": ["Java","Design patterns","OOP"],
     "website": "https://github.com/gutche/myth-arena"
   }
