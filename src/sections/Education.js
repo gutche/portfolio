@@ -5,24 +5,25 @@ import Heading from "../components/Heading"
 import { MdSchool } from "../components/Icons"
 
 const Education = () => {
-
-  const data = useStaticQuery(graphql`{
-    allEducationJson {
-      edges {
-        node {
-          id
-          subtitle
-          title
-          period
-          icon {
-            childImageSharp {
-              gatsbyImageData(placeholder: BLURRED)
+  const data = useStaticQuery(graphql`
+    {
+      allEducationJson {
+        edges {
+          node {
+            id
+            subtitle
+            title
+            period
+            icon {
+              childImageSharp {
+                gatsbyImageData(placeholder: BLURRED)
+              }
             }
           }
         }
       }
     }
-  }`)
+  `)
 
   return (
     <section id="education">
@@ -33,15 +34,13 @@ const Education = () => {
         <div className="-ml-2">
           {data.allEducationJson.edges.map(({ node }) => {
             return (
-              <div
-                className="py-4 flex"
-              >
+              <div className="py-4 flex">
                 <div className="ml-8">
-                  {<GatsbyImage
+                  <GatsbyImage
                     className="w-8 h-8"
                     image={node.icon.childImageSharp.gatsbyImageData}
                     alt={node.title}
-                  />}
+                  />
                   <h6 className="mt-3 font-semibold">{node.title}</h6>
                   <h6 className="text-sm">{node.subtitle}</h6>
                   <h6 className="mt-2 text-xs">({node.period})</h6>
