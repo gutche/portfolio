@@ -8,24 +8,24 @@ import { FaDev, FaGithub, FaLink } from "../components/Icons"
 import * as styles from "./Projects.module.css"
 
 const Projects = () => {
-
-  const data = useStaticQuery(graphql`{
-    allProjectsJson {
-      edges {
-        node {
-          title
-          website
-          description
-          image {
-            childImageSharp {
-              gatsbyImageData(placeholder: BLURRED)
+  const data = useStaticQuery(graphql`
+    {
+      allProjectsJson {
+        edges {
+          node {
+            title
+            website
+            description
+            image {
+              childImageSharp {
+                gatsbyImageData(placeholder: BLURRED)
+              }
             }
           }
         }
       }
     }
-  }`)
-
+  `)
 
   return (
     <section id="projects">
@@ -33,9 +33,7 @@ const Projects = () => {
 
       <div className={styles.container}>
         {data.allProjectsJson.edges.map(({ node }) => (
-          <div
-            className={`${styles.project}`}
-          >
+          <div className={`${styles.project}`}>
             <OutboundLink
               href={node.website || node.github}
               target="_blank"
@@ -43,10 +41,12 @@ const Projects = () => {
               className="w-full h-48 bg-black relative flex-center cursor-pointer rounded-lg shadow-lg"
             >
               <FaLink className="absolute" color="#FFF" size="5rem" />
-              {<GatsbyImage
-                className="absolute w-full h-full object-cover rounded-lg hover:opacity-50 duration-200"
-                image={node.image.childImageSharp.gatsbyImageData}
-              />}
+              {
+                <GatsbyImage
+                  className="absolute w-full h-full object-cover rounded-lg hover:opacity-50 duration-200"
+                  image={node.image.childImageSharp.gatsbyImageData}
+                />
+              }
               <span className="sr-only">{node.title}</span>
             </OutboundLink>
             <h5 className="mt-4 font-semibold text-center">{node.title}</h5>

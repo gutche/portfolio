@@ -1,6 +1,7 @@
 .typewriter {
-  width: 58ch;
-  animation: typing 4s steps(60), blink .4s step-end infinite alternate;
+  width: 40ch;
+  height: 3ch;
+  animation: typing 4s steps(60), blink 0.4s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 2px solid;
@@ -10,12 +11,12 @@
 
 @keyframes typing {
   from {
-    width: 0
+    width: 0;
   }
 }
-    
+
 @keyframes blink {
   50% {
-    border-color: transparent
+    border-color: transparent;
   }
 }
