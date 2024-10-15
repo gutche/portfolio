@@ -9,7 +9,7 @@
   {
     "image": "../images/projects/graphify.png",
     "title": "Graphify",
-    "description": "Graphify is an implementation of mxGraph",
+    "description": "Graphify is a diagramming software designed for creating Business Model Canvases, built on the mxGraph framework. More features and diagram types are coming soon!",
     "tags": ["Angular", "TypeScript"],
     "website": "https://github.com/gutche/graphify"
   }
