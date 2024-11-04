@@ -1,11 +1,11 @@
 import { graphql, useStaticQuery } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
-import React, { useState } from "react"
+import React from "react"
 import Heading from "../components/Heading"
 import { MdLocationOn, MdWork } from "../components/Icons"
 
 const Work = () => {
-  const [max, setMax] = useState(2)
+  const max = 2
   const data = useStaticQuery(graphql`
     {
       allWorkJson {

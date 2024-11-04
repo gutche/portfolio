@@ -1,4 +1,4 @@
-import { OutboundLink } from "gatsby-plugin-google-analytics"
+import { OutboundLink } from "gatsby-plugin-google-gtag"
 import React from "react"
 import social from "../data/social"
 import * as styles from "./Social.module.css"
@@ -8,7 +8,7 @@ const Social = () => {
     <div className={styles.container}>
       {social.map(x => {
         const Icon = x.icon
-        
+
         return (
           <OutboundLink
             href={x.link}
