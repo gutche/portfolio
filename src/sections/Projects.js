@@ -31,7 +31,7 @@ const Projects = () => {
     <section id="projects">
       <Heading icon={FaDev} title="Projects" />
 
-      <div className={styles.container}>
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {data.allProjectsJson.edges.map(({ node }) => (
           <div className={`${styles.project}`}>
             <OutboundLink

@@ -1,20 +1,10 @@
-.container {
-  @apply overflow-x-auto pb-8 items-center;
-  display: inline-block;
-}
-
 .project {
-  float: left;
   min-width: 280px;
   max-width: 280px;
   @apply mr-10 rounded-lg flex flex-col;
 }
 
 @media (orientation: portrait) {
-  .container {
-    @apply flex overflow-x-auto pb-8;
-  }
-
   .project {
     min-width: 280px;
     max-width: 280px;
