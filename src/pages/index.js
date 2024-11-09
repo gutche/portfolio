@@ -12,23 +12,19 @@ import Seo from "../components/Seo"
 const IndexPage = () => {
   return (
     <>
-      <head>
-        <Seo />
-      </head>
-      <body>
-        <Wrapper>
-          <div className={`container ${styles.layout}`}>
-            <Hero />
-            <Projects />
-            <Skills />
-            <div className={styles.workEducation}>
-              <Work />
-              <Education />
-            </div>
-            <Footer />
+      <Seo />
+      <Wrapper>
+        <div className={`container ${styles.layout}`}>
+          <Hero />
+          <Projects />
+          <Skills />
+          <div className={styles.workEducation}>
+            <Work />
+            <Education />
           </div>
-        </Wrapper>
-      </body>
+          <Footer />
+        </div>
+      </Wrapper>
     </>
   )
 }
