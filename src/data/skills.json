@@ -6,19 +6,22 @@
       { "name": "Java", "stars": 3 },
       { "name": "Python", "stars": 3 },
       { "name": "JavaScript", "stars": 3 },
-      { "name": "TypeScript", "stars": 3},
-      { "name": "C", "stars": 3}
+      { "name": "TypeScript", "stars": 3 },
+      { "name": "C", "stars": 3 }
     ]
   },
   {
     "icon": "../images/skills/react.png",
-    "name": "Web Development Frameworks",
-    "tech": [{ "name": "React", "stars": 3 },
-    { "name": "Angular", "stars": 3 }]
+    "name": "Web Development Frameworks/Libraries",
+    "tech": [
+      { "name": "React", "stars": 3 },
+      { "name": "Angular", "stars": 3 },
+      { "name": "Vue", "stars": 3 }
+    ]
   },
   {
     "icon": "../images/skills/docker.png",
-    "name": "Deployment tools",
+    "name": "DevOps Tools",
     "tech": [
       { "name": "Git", "stars": 4 },
       { "name": "Docker", "stars": 3 }
@@ -26,13 +29,17 @@
   },
   {
     "icon": "../images/skills/database.png",
-    "name": "Database",
-    "tech": [{ "name": "SQL", "stars": 4 }]
+    "name": "Query language",
+    "tech": [
+      { "name": "SQL", "stars": 4 },
+      { "name": "GraphQL", "stars": 4 }
+    ]
   },
   {
     "icon": "../images/skills/nodejs.png",
     "name": "Backend Technology",
-    "tech": [{ "name": "Spring Boot", "stars": 4 },
+    "tech": [
+      { "name": "Spring Boot", "stars": 4 },
       { "name": "Express.js", "stars": 4 },
       { "name": "Node.js", "stars": 4 }
     ]
