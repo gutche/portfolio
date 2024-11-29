@@ -29,10 +29,11 @@
   },
   {
     "icon": "../images/skills/database.png",
-    "name": "Query language",
+    "name": "Data Management Technologies",
     "tech": [
       { "name": "SQL", "stars": 4 },
-      { "name": "GraphQL", "stars": 4 }
+      { "name": "GraphQL", "stars": 4 },
+      { "name": "Redis", "stars": 4 }
     ]
   },
   {
