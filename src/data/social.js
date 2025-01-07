@@ -1,4 +1,4 @@
-import { FaGithubAlt, FaInstagram, FaLinkedinIn } from "../components/Icons"
+import { FaGithubAlt, FaLinkedinIn } from "../components/Icons"
 
 const social = [
   {
@@ -6,12 +6,6 @@ const social = [
     icon: FaGithubAlt,
     link: "https://github.com/gutche",
     class: "bg-github",
-  },
-  {
-    title: "Instagram",
-    icon: FaInstagram,
-    link: "https://instagram.com/gledtmp",
-    class: "bg-instagram",
   },
   {
     title: "LinkedIn",

@@ -16,7 +16,7 @@ import {
   FaSignLanguage,
   FaStar,
   FaHome,
-  FaAngleDoubleUp
+  FaAngleDoubleUp,
 } from "react-icons/fa"
 import { GoTools } from "react-icons/go"
 import {
@@ -25,7 +25,7 @@ import {
   IoIosMoon,
   IoIosPaperPlane,
   IoIosSunny,
-  IoIosRocket
+  IoIosRocket,
 } from "react-icons/io"
 import {
   MdLocationOn,
@@ -36,6 +36,7 @@ import {
   MdWork,
   MdMusicNote,
 } from "react-icons/md"
+import { FaPersonArrowUpFromLine } from "react-icons/fa6"
 
 export {
   AiFillInstagram,
@@ -71,4 +72,5 @@ export {
   MdMusicNote,
   FaHome,
   FaAngleDoubleUp,
+  FaPersonArrowUpFromLine,
 }

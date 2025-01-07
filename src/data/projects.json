@@ -9,15 +9,8 @@
   {
     "image": "../images/projects/yappin.png",
     "title": "Yappin",
-    "description": "Yappin is a modern messaging app built with the Vue framework for the frontend and Express for the backend. It enables real-time chat capabilities using Socket.IO for bidirectional and low-latency communication.",
+    "description": "Yappin is an experimental messaging app built with the Vue framework for educational purposes. It uses the Socket.IO library for bidirectional and low-latency communication.",
     "tags": ["Vue.js", "ExpressJS", "Socket.io", "Redis"],
     "website": "https://github.com/gutche/yappin"
-  },
-  {
-    "image": "../images/projects/graphify.png",
-    "title": "Graphify",
-    "description": "Graphify is a diagramming software designed for creating Business Model Canvases, built on the mxGraph framework. More features and diagram types are coming soon!",
-    "tags": ["Angular", "TypeScript", "mxGraph"],
-    "website": "https://github.com/gutche/graphify"
   }
 ]

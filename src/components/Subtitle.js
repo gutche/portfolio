@@ -10,7 +10,7 @@ const Subtitle = () => (
     </div>
     <div className="lg:pl-8">
       <div className={`${styles.typewriter} text-red-500 w-auto`}>
-        Software Engineer, Techie, AI Enthusiast, Unemployment Final Boss 💀
+        Software Engineer, Techie, AI Enthusiast
       </div>{" "}
     </div>
     <div>{"}"};</div>

@@ -1,9 +1,8 @@
 import ThemeContext from "../context/ThemeContext"
 import React, { useContext } from "react"
-import { IoIosMoon, IoIosSunny, IoIosRocket } from "./Icons"
+import { IoIosMoon, IoIosSunny, FaPersonArrowUpFromLine } from "./Icons"
 import * as styles from "./Navigation.module.css"
 import { animateScroll as scroll } from "react-scroll"
-
 
 const Navigation = () => {
   const { dark, toggleDark } = useContext(ThemeContext)
@@ -16,9 +15,7 @@ const Navigation = () => {
     })
 
   return (
-    <div
-      className={`${styles.container}`}
-    >
+    <div className={`${styles.container}`}>
       <div
         tabIndex={0}
         role="button"
@@ -26,7 +23,7 @@ const Navigation = () => {
         className="flex-center cursor-pointer hover:text-primary"
         onClick={scrollToTop}
       >
-        <IoIosRocket size={25} />
+        <FaPersonArrowUpFromLine size={25} />
       </div>
       <div
         tabIndex={0}
